@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "My Site",
-    "currentPage": "architecture.html",
+    "currentPage": "team.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -1406,7 +1406,7 @@
         }
       ]
     },
-    "page2.html": {
+    "user_manual.html": {
       "settings": {
         "title": "User_Manual",
         "order": 2
@@ -1913,7 +1913,7 @@
         }
       ]
     },
-    "page3.html": {
+    "team.html": {
       "settings": {
         "title": "Team",
         "order": 3
