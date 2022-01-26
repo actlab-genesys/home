@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v5.5.8, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.5.8, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/act-logo-121x121.jpg" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Architecture</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+  
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="menu cid-s48OLK6784" once="menu" id="menu1-17">
+    
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="https://mobiri.se">
+                        <img src="assets/images/act-logo-121x121.jpg" alt="Mobirise" style="height: 3.8rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-7" href="https://mobiri.se">Alternative Computing Technologies (ACT) Lab<br>University of California, San Diego<br></a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#top">&nbsp;Home</a></li><li class="nav-item dropdown open"><a class="nav-link link text-black dropdown-toggle display-4" href="https://mobirise.com" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="true">Architecture</a><div class="dropdown-menu" aria-labelledby="dropdown-undefined"><a class="text-black dropdown-item text-primary display-4" href="architecture.html#content4-1b">Hardware Architecture</a><a class="text-black show dropdown-item text-primary display-4" href="architecture.html#content4-1f">Compiler</a><a class="text-black show dropdown-item text-primary display-4" href="architecture.html#content4-1e">Instruction Set Architecture</a></div></li><li class="nav-item"><a class="nav-link link text-black display-4" href="https://mobirise.com">&nbsp;User Manual</a></li><li class="nav-item"><a class="nav-link link text-black display-4" href="https://mobirise.com">Team</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#contacts3-w">Contact Us</a></li></ul>
+                
+                
+            </div>
+        </div>
+    </nav>
+
+</section>
+
+<section data-bs-version="5.1" class="content4 cid-sVCRTjLetk" id="content4-1b">
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-md-12 col-lg-10">
+                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2"><strong>Hardware Architecture</strong></h3>
+                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7">The accelerator consists of two core components: a systolic array and a SIMD array. Data is supplied to the engine through the input buffer (IBUFF), output buffer (OBUFF), instruction memory (IMEM), weight buffer (WBUFF), and bias buffer (BBUFF). These interfaces harbor programmable data access modules and controller FSMs that together issue the addresses and requests to load or store a tile of data from/to off-chip memory. The data access creates strided patterns that access the off-chip memory to read/write the corresponding data from/to on-chip buffers and populate the on-chip memory. These interfaces also include tag logic that is in charge of handling double-buffered data transfer to hide the latencies of Load/Store operations and also facilitate prefetching. Among these interfaces, the interfaces for the OBUFF and SIMD array handle both load and store operations, while the other interfaces handle only load operations. These interfaces are fully programmable through the instruction set architecture (ISA) of the GeneSys accelerator.​<div><br></div><div>The overall system view and the systolic array of the GeneSys DNN accelerator are shown below</div></h4>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="image4 cid-sVCRVPC7LY" id="image4-1d">
+    
+
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="image-wrapper">
+                    <img src="assets/images/genesys-systolic-array-512x373.png" alt="Mobirise">
+                    <p class="mbr-text mbr-fonts-style mt-2 align-center display-4"><br><br><br><br>GeneSys Systolic Array<br>Showing the overall waterfall-like uni-directional flow of data.</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="image-wrapper">
+                    <img src="assets/images/genesys-overall-view-512x435.png" alt="Mobirise">
+                    <p class="mbr-text mbr-fonts-style mt-2 align-center display-4"><br>GeneSys System View<br>The memory channels are connected to the DDR memory.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content4 cid-sVCS0gKJmK" id="content4-1e">
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-md-12 col-lg-10">
+                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2">
+                    <strong>Instruction Set Architecture</strong></h3>
+                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7">GeneSys is a programmable accelerator and offers a wide set of instructions such that it can accelerate DNNs which have layers ranging from GEMM, Convolution, Non-linear Activation Functions, Pooling, BatchNorm etc. For more details on the ISA, please click here</h4>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content4 cid-sVCS0BaiYA" id="content4-1f">
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-md-12 col-lg-10">
+                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2"><strong>Complier</strong></h3>
+                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7">
+                    You can arrange your articles with the Mobirise website design software.
+                </h4>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content4 cid-sVCS1wvL1g" id="content4-1g">
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-md-12 col-lg-10">
+                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2"><strong>Containerization</strong><br></h3>
+                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7">We have created a container for GeneSys such that it can be easily migrated to a cloud service provider which has a FPGA.<br>We are still in the process of open-sourcing the container image. Please check the page again for updates.</h4>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="footer3 cid-s48P1Icc8J" once="footers" id="footer3-18">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="row row-links">
+                <ul class="foot-menu">
+                    
+                    
+                    
+                    
+                    
+                <li class="foot-menu-item mbr-fonts-style display-7"><a href="index.html#top" class="text-info">Home</a></li></ul>
+            </div>
+            
+            <div class="row row-copirayt">
+                <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
+                    © Copyright 2022&nbsp;Alternative Computing Technologies (ACT) Lab. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</section><section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="https://mobirise.site/b" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;"><a href="https://mobirise.site/r" style="color:#aaa;">The site</a> was built with Mobirise templates</p></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+  
+  
+</body>
+</html>
